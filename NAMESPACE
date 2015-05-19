@@ -1,0 +1,7 @@
+importFrom(expm, sqrtm)
+
+export(effective.bets,
+       torsion,
+       fix.defects,
+       marginal.risk.contribution
+       )
