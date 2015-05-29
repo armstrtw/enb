@@ -15,7 +15,7 @@ mrdivide <- function(A, B) {
 
 
 max.cor <- function(factor.returns) {
-    x <- round(abs(cor(factor.returns)),2)
+    x <- abs(cor(factor.returns))
     max(x[row(x) < col(x)])
 }
 
