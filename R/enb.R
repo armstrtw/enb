@@ -26,8 +26,6 @@
 ## OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 ## OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-require(expm) ## for sqrtm
-
 ## this file is governed by the BSD license, please see:
 ## http://www.mathworks.com/matlabcentral/fileexchange/43245-portfolio-diversi%C2%85cation-based-on-optimized-uncorrelated-factors
 

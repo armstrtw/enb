@@ -13,6 +13,20 @@ mrdivide <- function(A, B) {
     t(solve(t(B)) %*% t(A))
 }
 
+## from rrcov
+sqrtm <- function(A) {
+    ##
+    ## [E D] = eig(A); sqrtm(A) = E * sqrt(D) * E'
+    ##
+    if(!is.matrix(A) || ncol(A) != nrow(A))
+        stop("The matrix A must be a square matrix.")
+
+    ee <- eigen(A)
+    if(any(ee$values < 0)) {
+        stop("The matrix A must be positive definite.")
+    }
+    ee$vectors %*% diag(sqrt(ee$values)) %*% t(ee$vectors)
+}
 
 max.cor <- function(factor.returns) {
     x <- abs(cor(factor.returns))

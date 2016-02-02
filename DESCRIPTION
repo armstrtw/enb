@@ -1,8 +1,7 @@
 Package: enb
 Title: Effective number of bets
-Version: 0.0.1
+Version: 0.0.2
 Maintainer: Whit Armstrong <armstrong.whit@gmail.com>
 Author: Whit Armstrong <armstrong.whit@gmail.com>
 Description: Minimum Torsion Bets for Effective Number of Bets and Diversification Distribution
 License: GPL-3
-Depends: expm
